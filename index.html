@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VeloTrader — Elite Day Trading Signals</title>
-<meta name="description" content="Professional day trading signals. Napi 400%+ hozam is lehetséges. Verified returns. Join 1,200+ members.">
+<meta name="description" content="Professional day trading signals. 400%+ daily returns possible. Verified results. Join 1,200+ members.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -362,63 +362,6 @@ section { padding: 96px 5%; }
   display: flex; align-items: flex-end; justify-content: center; padding-bottom: 16px;
 }
 
-/* ── PROFIT CALCULATOR ── */
-.calc-section { background: var(--bg); }
-.calc-inner { max-width: 1160px; margin: 0 auto; }
-.calc-header { margin-bottom: 56px; }
-
-.calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
-
-.calc-panel {
-  background: var(--panel); border: 1px solid var(--border);
-  border-radius: 18px; padding: 36px; position: relative; overflow: hidden;
-}
-.calc-panel::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--blue), var(--green)); }
-
-.calc-label { font-size: 13px; color: var(--muted2); font-weight: 500; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
-.calc-label span { font-family: var(--mono); color: var(--blue); font-weight: 600; }
-
-.calc-slider {
-  -webkit-appearance: none; appearance: none;
-  width: 100%; height: 4px; border-radius: 4px;
-  background: linear-gradient(90deg, var(--blue) var(--pct,30%), var(--panel2) var(--pct,30%));
-  outline: none; margin-bottom: 24px; cursor: none;
-}
-.calc-slider::-webkit-slider-thumb {
-  -webkit-appearance: none; appearance: none;
-  width: 18px; height: 18px; border-radius: 50%;
-  background: var(--blue); cursor: none;
-  box-shadow: 0 0 16px rgba(0,194,255,0.5);
-  border: 2px solid #030810;
-}
-
-.calc-plan-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
-.plan-tab {
-  flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border);
-  background: transparent; color: var(--muted2); font-family: var(--font);
-  font-size: 13px; font-weight: 600; cursor: none; transition: all 0.2s;
-  text-align: center;
-}
-.plan-tab.active { background: var(--blue-dim); border-color: var(--border2); color: var(--blue); }
-.plan-tab:hover:not(.active) { border-color: var(--border2); color: var(--text); }
-
-.calc-result-panel {
-  background: var(--panel); border: 1px solid var(--border);
-  border-radius: 18px; padding: 36px;
-}
-.calc-result-main { font-family: var(--font); font-size: clamp(40px,5vw,64px); font-weight: 800; letter-spacing: -2px; color: var(--green); margin-bottom: 4px; }
-.calc-result-sub { font-size: 14px; color: var(--muted); margin-bottom: 28px; }
-
-.calc-breakdown { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
-.cb-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: var(--panel2); border-radius: 10px; border: 1px solid var(--border); }
-.cb-label { font-size: 13px; color: var(--muted2); }
-.cb-val { font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--text); }
-.cb-val.pos { color: var(--green); }
-.cb-val.neg { color: var(--red); }
-
-.calc-cta { display: block; text-align: center; padding: 14px; background: var(--green); color: #030810; border-radius: 10px; font-weight: 700; font-size: 15px; text-decoration: none; transition: all 0.25s; box-shadow: 0 0 28px rgba(0,230,118,0.3); cursor: none; }
-.calc-cta:hover { transform: translateY(-2px); box-shadow: 0 0 42px rgba(0,230,118,0.45); }
-
 /* ── PERFORMANCE CHART ── */
 .perf-section { background: var(--bg1); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .perf-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
@@ -686,7 +629,7 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
   <ul class="nav-links">
     <li><a href="#how">How It Works</a></li>
     <li><a href="#signals">Signals</a></li>
-    <li><a href="#calculator">Calculator</a></li>
+    
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#faq">FAQ</a></li>
@@ -703,11 +646,11 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
 <div class="mobile-menu" id="mobileMenu">
   <a href="#how" onclick="closeMobile()">How It Works</a>
   <a href="#signals" onclick="closeMobile()">Signals</a>
-  <a href="#calculator" onclick="closeMobile()">Calculator</a>
+  
   <a href="#pricing" onclick="closeMobile()">Pricing</a>
   <a href="#reviews" onclick="closeMobile()">Reviews</a>
   <a href="#faq" onclick="closeMobile()">FAQ</a>
-  <a href="https://t.me/tozsdekiraly" target="_blank">→ Csatlakozz ingyen Telegramra</a>
+  <a href="https://t.me/tozsdekiraly" target="_blank">→ Join Free on Telegram</a>
 </div>
 
 <!-- HERO -->
@@ -721,28 +664,28 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
   <div class="hero-content">
     <div class="hero-eyebrow">
       <div class="pulse-dot"></div>
-      <span>1,200+ aktív tag · Napi szignálok tőzsdenyitástól</span>
+      <span>1,200+ active members · Daily signals from market open</span>
     </div>
     <h1>
-      Napi <span class="accent-green">400%+</span><br>
-      hozam is <span class="accent-blue">elérhető</span><br>
-      <span class="line-stroke">day tradinggel</span>
+      Daily <span class="accent-green">400%+</span><br>
+      returns are <span class="accent-blue">possible</span><br>
+      <span class="line-stroke">with day trading</span>
     </h1>
-    <p class="hero-sub">Profi day trading szignálok — pontos belépési és kilépési szintekkel, stop-loss védelemmel. Napi kereskedés, azonnali eredmények. 78%-os találati arány, teljes átláthatósággal.</p>
+    <p class="hero-sub">Professional day trading signals with exact entry and exit levels, stop-loss protection, and instant results. 78% win rate. Verified, transparent, no BS.</p>
 
     <div class="hero-min-badge">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-      Kezdj akár €30-tól — töredékrészvények támogatásával
+      Start from as little as $30 — fractional shares supported
     </div>
 
     <div class="hero-ctas">
       <a href="https://t.me/tozsdekiraly" target="_blank" class="btn-primary">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-        Csatlakozz ingyen Telegramra
+        Join Free on Telegram
       </a>
-      <a href="#calculator" class="btn-secondary">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="14" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="14" y1="14" x2="16" y2="14"/></svg>
-        Profit kalkulátor
+      <a href="#pricing" class="btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        View Pricing
       </a>
     </div>
   </div>
@@ -779,10 +722,10 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
 <!-- STATS -->
 <div class="stats-section">
   <div class="stats-grid">
-    <div class="stat-card"><div class="stat-val c-blue" data-count="1200">0</div><div class="stat-label">Aktív tag</div></div>
-    <div class="stat-card"><div class="stat-val c-green" data-count="400" data-suffix="%">0</div><div class="stat-label">Max. napi hozam</div></div>
-    <div class="stat-card"><div class="stat-val c-gold" data-count="847">0</div><div class="stat-label">Kiadott szignál</div></div>
-    <div class="stat-card"><div class="stat-val c-blue" data-count="78" data-suffix="%">0</div><div class="stat-label">Találati arány</div></div>
+    <div class="stat-card"><div class="stat-val c-blue" data-count="1200">0</div><div class="stat-label">Active Members</div></div>
+    <div class="stat-card"><div class="stat-val c-green" data-count="400" data-suffix="%">0</div><div class="stat-label">Max Daily Return</div></div>
+    <div class="stat-card"><div class="stat-val c-gold" data-count="847">0</div><div class="stat-label">Signals Delivered</div></div>
+    <div class="stat-card"><div class="stat-val c-blue" data-count="78" data-suffix="%">0</div><div class="stat-label">Win Rate</div></div>
   </div>
 </div>
 
@@ -791,26 +734,26 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
   <div class="how-inner">
     <div class="how-header">
       <div class="section-tag"><div class="tag-dot"></div>Process</div>
-      <h2 class="section-h">Hogyan működik a VeloTrader?</h2>
-      <p class="section-p">Három lépés a nulláról az első nyereséges napi kereskedésig.</p>
+      <h2 class="section-h">How VeloTrader works</h2>
+      <p class="section-p">Three steps from zero to your first profitable day trade.</p>
     </div>
     <div class="steps-grid">
       <div class="step-card" data-delay="0">
         <div class="step-num">01</div>
-        <div class="step-title">Csatlakozz az ingyenes Telegramhoz</div>
-        <p class="step-desc">Menj a <strong style="color:var(--blue)">t.me/tozsdekiraly</strong> csatornára és csatlakozz azonnal. Heti 1 ingyenes, verifikált day trading szignált kapsz — kártyaadatok nélkül.</p>
+        <div class="step-title">Join the free Telegram</div>
+        <p class="step-desc">Head to <strong style="color:var(--blue)">t.me/tozsdekiraly</strong> and join instantly. Get 1 free verified day trading signal per week — no credit card needed.</p>
         <div class="step-arrow"><svg viewBox="0 0 10 10"><polyline points="3 1 7 5 3 9"/></svg></div>
       </div>
       <div class="step-card" data-delay="100">
         <div class="step-num">02</div>
-        <div class="step-title">Nyiss Trading 212 fiókot — akár €30-tól</div>
-        <p class="step-desc">Töredékrészvényekkel már €30-tól követheted a szignálokat. Nulla jutalék, azonnali végrehajtás. Növeld a tőkéd ahogy az eredmények jönnek.</p>
+        <div class="step-title">Open Trading 212 — from $30</div>
+        <p class="step-desc">Fractional shares let you act on every signal with just $30. Zero commission, instant execution. Scale up as your results grow.</p>
         <div class="step-arrow"><svg viewBox="0 0 10 10"><polyline points="3 1 7 5 3 9"/></svg></div>
       </div>
       <div class="step-card" data-delay="200">
         <div class="step-num">03</div>
-        <div class="step-title">Végrehajtás 60 másodperc alatt</div>
-        <p class="step-desc">Minden day trading szignál tartalmaz tickert, belépési árat, stop-losst és célárat. Másold be T212-be, hajtsd végre — és kövesd az eredményeket a közösséggel együtt.</p>
+        <div class="step-title">Execute in under 60 seconds</div>
+        <p class="step-desc">Every signal includes ticker, entry price, stop-loss, and target. Copy it into T212, execute, and track results with the community — fully transparent.</p>
       </div>
     </div>
   </div>
@@ -821,14 +764,14 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
   <div class="signals-inner">
     <div class="signals-left">
       <div class="section-tag"><div class="tag-dot"></div>Signal Feed</div>
-      <h2 class="section-h">Valódi szignálok.<br>Valódi eredmények.</h2>
-      <p class="section-p">Minden day trading szignált publikálunk — nyereségest és veszteségest egyaránt. Teljes átláthatóság, semmi szelektálás.</p>
+      <h2 class="section-h">Real signals.<br>Real results.</h2>
+      <p class="section-p">Every signal is published — wins and losses alike. Full transparency, zero cherry-picking.</p>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:28px">
         <a href="https://t.me/tozsdekiraly" target="_blank" class="btn-primary" style="font-size:14px;padding:13px 26px">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-          Élő szignálok megtekintése
+          See live signals
         </a>
-        <a href="#pricing" class="btn-ghost">Összes feloldása →</a>
+        <a href="#pricing" class="btn-ghost">Unlock all →</a>
       </div>
     </div>
     <div>
@@ -842,112 +785,57 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
         </div>
         <div class="sig-row">
           <div class="sig-left"><div class="sig-ticker">NVDA</div><div><div class="sig-name">NVIDIA Corp</div><div class="sig-type">DAY · US Tech</div></div></div>
-          <div class="sig-right"><div class="sig-ret up">+87.4%</div><div class="sig-days">Intraday · Zárva</div></div>
+          <div class="sig-right"><div class="sig-ret up">+87.4%</div><div class="sig-days">Intraday · Closed</div></div>
         </div>
         <div class="sig-row">
           <div class="sig-left"><div class="sig-ticker">TSLA</div><div><div class="sig-name">Tesla Inc</div><div class="sig-type">DAY · EV</div></div></div>
-          <div class="sig-right"><div class="sig-ret up">+112.8%</div><div class="sig-days">2 nap · Zárva</div></div>
+          <div class="sig-right"><div class="sig-ret up">+112.8%</div><div class="sig-days">2 days · Closed</div></div>
         </div>
         <div class="sig-row">
           <div class="sig-left"><div class="sig-ticker">META</div><div><div class="sig-name">Meta Platforms</div><div class="sig-type">DAY · Social</div></div></div>
-          <div class="sig-right"><div class="sig-ret up">+63.2%</div><div class="sig-days">Intraday · Zárva</div></div>
+          <div class="sig-right"><div class="sig-ret up">+63.2%</div><div class="sig-days">Intraday · Closed</div></div>
         </div>
         <div class="sig-row">
           <div class="sig-left"><div class="sig-ticker">AMD</div><div><div class="sig-name">AMD</div><div class="sig-type">DAY · Semicon</div></div></div>
-          <div class="sig-right"><div class="sig-ret dn">-8.1%</div><div class="sig-days">Intraday · Stop</div></div>
+          <div class="sig-right"><div class="sig-ret dn">-8.1%</div><div class="sig-days">Intraday · Stop hit</div></div>
         </div>
         <div class="sig-row">
           <div class="sig-left"><div class="sig-ticker">AMZN</div><div><div class="sig-name">Amazon</div><div class="sig-type">DAY · E-Commerce</div></div></div>
-          <div class="sig-right"><div class="sig-ret up">+44.6%</div><div class="sig-days">3 nap · Zárva</div></div>
+          <div class="sig-right"><div class="sig-ret up">+44.6%</div><div class="sig-days">3 days · Closed</div></div>
         </div>
         <div class="sig-blur">
-          <a href="https://t.me/tozsdekiraly" target="_blank" class="btn-primary" style="font-size:13px;padding:10px 20px">Összes szignál feloldása →</a>
+          <a href="https://t.me/tozsdekiraly" target="_blank" class="btn-primary" style="font-size:13px;padding:10px 20px">Unlock all signals →</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROFIT CALCULATOR -->
-<section class="calc-section" id="calculator">
-  <div class="calc-inner">
-    <div class="calc-header">
-      <div class="section-tag"><div class="tag-dot"></div>Profit Calculator</div>
-      <h2 class="section-h">Mennyit kereshettél volna?</h2>
-      <p class="section-p">Add meg a számokat és nézd meg, mit hoztak volna a VeloTrader day trading szignálok a tőkéden.</p>
-    </div>
 
-    <div class="calc-grid">
-      <div class="calc-panel">
-        <div class="calc-label">Induló tőke<span id="capitalDisplay">€1,000</span></div>
-        <input type="range" class="calc-slider" id="capitalSlider" min="30" max="50000" value="1000" step="10">
-
-        <div class="calc-label">Időszak<span id="periodDisplay">12 months</span></div>
-        <input type="range" class="calc-slider" id="periodSlider" min="1" max="36" value="12" step="1">
-
-        <div class="calc-label" style="margin-bottom:10px">Válassz tervet</div>
-        <div class="calc-plan-tabs">
-          <div class="plan-tab" data-rate="0.15" onclick="selectPlan(this, 0.15)">Free<br><small style="font-family:var(--mono);font-size:10px;color:var(--muted)">~15%/yr</small></div>
-          <div class="plan-tab active" data-rate="0.312" onclick="selectPlan(this, 0.312)">Pro<br><small style="font-family:var(--mono);font-size:10px;color:var(--muted)">~31.2%/yr</small></div>
-          <div class="plan-tab" data-rate="0.45" onclick="selectPlan(this, 0.45)">Elite<br><small style="font-family:var(--mono);font-size:10px;color:var(--muted)">~45%/yr</small></div>
-        </div>
-      </div>
-
-      <div class="calc-result-panel">
-        <div style="font-size:12px;color:var(--muted);margin-bottom:6px;font-family:var(--mono)">BECSÜLT HOZAM</div>
-        <div class="calc-result-main" id="calcResult">€312</div>
-        <div class="calc-result-sub" id="calcResultSub">on €1,000 over 12 months with Pro</div>
-
-        <div class="calc-breakdown">
-          <div class="cb-row">
-            <span class="cb-label">Induló tőke</span>
-            <span class="cb-val" id="cbCapital">€1,000</span>
-          </div>
-          <div class="cb-row">
-            <span class="cb-label">Becsült nyereség</span>
-            <span class="cb-val pos" id="cbGain">+€312</span>
-          </div>
-          <div class="cb-row">
-            <span class="cb-label">Terv díja (összesen)</span>
-            <span class="cb-val neg" id="cbFee">-€588</span>
-          </div>
-          <div class="cb-row" style="border-color:var(--border2)">
-            <span class="cb-label" style="font-weight:700;color:var(--text)">Nettó profit</span>
-            <span class="cb-val pos" style="font-size:16px;font-weight:800" id="cbNet">-€276</span>
-          </div>
-        </div>
-
-        <a href="#pricing" class="calc-cta">Kezdd el a Pro-val →</a>
-
-        <p style="font-size:11px;color:var(--muted);margin-top:12px;line-height:1.5">A múltbeli teljesítmény nem garantálja a jövőbeli eredményeket. A becslések historikus szignál adatokon alapulnak. Csak azt kockáztasd, amit megengedhetsz magadnak elveszíteni.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- PERFORMANCE + T212 -->
 <section class="perf-section" id="performance">
   <div class="perf-inner">
     <div>
       <div class="section-tag"><div class="tag-dot"></div>Platform</div>
-      <h2 class="section-h">Day trading,<br>Trading 212-n</h2>
-      <p class="section-p" style="margin-bottom:36px">Minden szignált a T212 nulla jutalékos struktúrájára és azonnali végrehajtására optimalizáltunk. Kezdj €30-tól és növeld tőkédet magabiztosan.</p>
+      <h2 class="section-h">Day trading<br>on Trading 212</h2>
+      <p class="section-p" style="margin-bottom:36px">Every signal is optimised for T212's zero-commission structure and instant execution. Start from $30 and scale with confidence.</p>
       <div class="t212-feats">
         <div class="t212-feat">
           <div class="feat-icon"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-          <div><div class="feat-title">Nulla jutalék</div><div class="feat-desc">Minden szignál a T212 jutalékmentes modelljére épít. Minden százalék valódi profit a zsebedben.</div></div>
+          <div><div class="feat-title">Zero Commission</div><div class="feat-desc">All signals are built on T212's commission-free model. Every percentage point is real profit in your pocket.</div></div>
         </div>
         <div class="t212-feat">
           <div class="feat-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-          <div><div class="feat-title">60 másodperces végrehajtás</div><div class="feat-desc">A szignálok T212-re előformázottak — ticker, belépés, stop, cél. Gondolkodás nélkül hajts végre.</div></div>
+          <div><div class="feat-title">60-Second Execution</div><div class="feat-desc">Signals are pre-formatted for T212 — ticker, entry, stop, target. Execute without thinking.</div></div>
         </div>
         <div class="t212-feat">
           <div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <div><div class="feat-title">ISA &amp; Invest kompatibilis</div><div class="feat-desc">Működik T212 Invest és ISA számlákkal egyaránt, €1-tól induló töredékpozíciókkal.</div></div>
+          <div><div class="feat-title">ISA &amp; Invest Compatible</div><div class="feat-desc">Works with both T212 Invest and ISA accounts, including fractional positions from $1.</div></div>
         </div>
         <div class="t212-feat">
           <div class="feat-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-          <div><div class="feat-title">Mobilra optimalizált</div><div class="feat-desc">A T212 mobilappra tervezve — reagálj a szignálokra bárhonnan, másodpercek alatt.</div></div>
+          <div><div class="feat-title">Mobile-First Format</div><div class="feat-desc">Designed for the T212 mobile app — act on signals from anywhere in seconds.</div></div>
         </div>
       </div>
     </div>
@@ -955,12 +843,12 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
       <div class="chart-wrap">
         <div class="chart-toprow">
           <div>
-            <div class="chart-label">Portfólió teljesítmény</div>
-            <div class="chart-sublabel">€10,000 induló tőke</div>
+            <div class="chart-label">Portfolio Performance</div>
+            <div class="chart-sublabel">$10,000 starting capital</div>
           </div>
           <div style="text-align:right">
             <div class="chart-main-val" id="chartVal">+312%</div>
-            <div class="chart-sublabel">€41,200 végérték</div>
+            <div class="chart-sublabel">$41,200 final value</div>
           </div>
         </div>
         <div class="chart-tabs">
@@ -980,10 +868,10 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
         </div>
       </div>
       <div class="perf-stats">
-        <div class="ps-card"><div class="ps-val green">78%</div><div class="ps-lbl">Találati arány</div></div>
-        <div class="ps-card"><div class="ps-val blue">3.2×</div><div class="ps-lbl">Kockázat/Hozam</div></div>
-        <div class="ps-card"><div class="ps-val green">847</div><div class="ps-lbl">Összes szignál</div></div>
-        <div class="ps-card"><div class="ps-val blue">1.2d</div><div class="ps-lbl">Átl. tartási idő</div></div>
+        <div class="ps-card"><div class="ps-val green">78%</div><div class="ps-lbl">Win Rate</div></div>
+        <div class="ps-card"><div class="ps-val blue">3.2×</div><div class="ps-lbl">Risk/Reward</div></div>
+        <div class="ps-card"><div class="ps-val green">847</div><div class="ps-lbl">Signals Total</div></div>
+        <div class="ps-card"><div class="ps-val blue">1.2d</div><div class="ps-lbl">Avg. Hold Time</div></div>
       </div>
     </div>
   </div>
@@ -994,15 +882,15 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
   <div class="pricing-inner">
     <div class="pricing-header">
       <div class="section-tag"><div class="tag-dot"></div>Plans</div>
-      <h2 class="section-h">Egyszerű árazás.<br>Nincsenek rejtett díjak.</h2>
-      <p class="section-p">Kezdj ingyen — lépj szintet, ha komolyra fordítod a day tradinget.</p>
+      <h2 class="section-h">Simple pricing.<br>No hidden fees.</h2>
+      <p class="section-p">Start free — upgrade when you're ready to get serious about day trading.</p>
       <div class="pricing-toggle">
         <span class="toggle-label">Monthly</span>
         <div class="toggle-switch" id="billingToggle" onclick="toggleBilling()">
           <div class="toggle-knob"></div>
         </div>
         <span class="toggle-label">Annual</span>
-        <span class="toggle-badge" id="saveBadge">Spórolj 20%-ot</span>
+        <span class="toggle-badge" id="saveBadge">Save 20%</span>
       </div>
     </div>
     <div class="pricing-grid">
@@ -1010,53 +898,53 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
       <!-- FREE -->
       <div class="price-card" data-delay="0">
         <div class="price-name">Free</div>
-        <div class="price-amount"><sup>€</sup><span class="price-num" data-monthly="0" data-annual="0">0</span></div>
-        <div class="price-period">Örökre ingyenes</div>
+        <div class="price-amount"><sup>$</sup><span class="price-num" data-monthly="0" data-annual="0">0</span></div>
+        <div class="price-period">Forever free</div>
         <div class="price-divider"></div>
         <ul class="price-features">
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Heti 1 verifikált szignál</li>
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Hozzáférés: t.me/tozsdekiraly</li>
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Heti piaci összefoglaló</li>
-          <li><span class="feat-off"></span>Azonnali prioritás riasztások</li>
-          <li><span class="feat-off"></span>Belépési és kilépési szintek</li>
-          <li><span class="feat-off"></span>Stop-loss és célszintek</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>1 verified signal per week</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Access to t.me/tozsdekiraly</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Weekly market overview</li>
+          <li><span class="feat-off"></span>Priority instant alerts</li>
+          <li><span class="feat-off"></span>Entry &amp; exit levels</li>
+          <li><span class="feat-off"></span>Stop-loss &amp; targets</li>
         </ul>
-        <a href="https://t.me/tozsdekiraly" target="_blank" class="btn-plan">Csatlakozz ingyen Telegramra</a>
+        <a href="https://t.me/tozsdekiraly" target="_blank" class="btn-plan">Join Free on Telegram</a>
       </div>
 
       <!-- PRO -->
       <div class="price-card featured" data-delay="120">
         <div class="price-popular">MOST POPULAR</div>
         <div class="price-name">Pro</div>
-        <div class="price-amount"><sup>€</sup><span class="price-num" data-monthly="49" data-annual="39">49</span></div>
-        <div class="price-period">havonta</div>
+        <div class="price-amount"><sup>$</sup><span class="price-num" data-monthly="49" data-annual="39">49</span></div>
+        <div class="price-period">per month</div>
         <div class="price-divider"></div>
         <ul class="price-features">
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Minden ami Free-ben van</li>
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Korlátlan napi szignál</li>
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Azonnali belépési/kilépési riasztás</li>
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Stop-loss és célszintek</li>
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Havi portfólió áttekintés</li>
-          <li><span class="feat-off"></span>1-az-1 mentoring hívások</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Everything in Free</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Unlimited daily signals</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Instant entry &amp; exit alerts</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Stop-loss &amp; targets</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Monthly portfolio review</li>
+          <li><span class="feat-off"></span>1-on-1 mentoring calls</li>
         </ul>
-        <a href="mailto:kevassets@gmail.com" class="btn-plan primary">Pro hozzáférés megszerzése</a>
+        <a href="https://buy.stripe.com/14A5kE6CK9V8bPygpzcIE00" target="_blank" class="btn-plan primary" id="proBtnLink">Get Pro Access</a>
       </div>
 
       <!-- ELITE -->
       <div class="price-card" data-delay="240">
         <div class="price-name">Elite</div>
-        <div class="price-amount"><sup>€</sup><span class="price-num" data-monthly="99" data-annual="79">99</span></div>
-        <div class="price-period">havonta</div>
+        <div class="price-amount"><sup>$</sup><span class="price-num" data-monthly="99" data-annual="79">99</span></div>
+        <div class="price-period">per month</div>
         <div class="price-divider"></div>
         <ul class="price-features">
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Minden ami Pro-ban van</li>
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Havi 1-az-1 hívás</li>
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Személyes portfólió áttekintés</li>
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Privát Elite csoport</li>
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Közvetlen WhatsApp elérés</li>
-          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Prioritás szignál riasztások</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Everything in Pro</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>1-on-1 monthly call</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Custom portfolio review</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Private Elite group</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Direct WhatsApp access</li>
+          <li class="on"><span class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Priority signal alerts</li>
         </ul>
-        <a href="mailto:kevassets@gmail.com" class="btn-plan">Elite csomag igénylése</a>
+        <a href="https://buy.stripe.com/28EaEY6CK9V8aLu3CNcIE02" target="_blank" class="btn-plan" id="eliteBtnLink">Get Elite Access</a>
       </div>
 
     </div>
@@ -1068,56 +956,56 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
   <div class="reviews-inner">
     <div class="reviews-header">
       <div class="section-tag"><div class="tag-dot"></div>Reviews</div>
-      <h2 class="section-h">Akik sikerrel alkalmazzák.</h2>
-      <p class="section-p">Valódi eredmények valódi emberektől, akik a VeloTrader day trading szignálokat használják.</p>
+      <h2 class="section-h">Members who made it work.</h2>
+      <p class="section-p">Real results from real people using VeloTrader day trading signals on Trading 212.</p>
     </div>
     <div class="reviews-grid">
       <div class="review-card" data-delay="0">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"€3,000-vel kezdtem Trading 212-n és minden szignált követtem 6 hónapig. Most €11,400-nál tartok. Az NVIDIA és Tesla day trade-ek teljesen pontosak voltak."</p>
+        <p class="review-text">"I started with $3,000 on Trading 212 and followed every signal for 6 months. I'm sitting at $11,400 now. The NVIDIA and Tesla day trades were absolutely spot on."</p>
         <div class="review-author">
           <div class="review-avatar">JM</div>
-          <div><div class="review-name">James M.</div><div class="review-ret">+280% 6 hónap alatt</div></div>
+          <div><div class="review-name">James M.</div><div class="review-ret">+280% in 6 months</div></div>
         </div>
       </div>
       <div class="review-card" data-delay="100">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"A legjobb benne az átláthatóság. Minden szignálhoz van stop-loss és cél. Nincs találgatás, nincs homályos tanács. A T212 ISA számlámon soha nem volt ilyen jól."</p>
+        <p class="review-text">"What I love is the transparency. Every signal has a clear stop-loss and target. No guessing, no vague advice. My T212 ISA has never looked better."</p>
         <div class="review-author">
           <div class="review-avatar">SR</div>
-          <div><div class="review-name">Sophie R.</div><div class="review-ret">+195% 9 hónap alatt</div></div>
+          <div><div class="review-name">Sophie R.</div><div class="review-ret">+195% in 9 months</div></div>
         </div>
       </div>
       <div class="review-card" data-delay="200">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Évek óta vagyok trading közösségekben és ez az első ami tényleg teljesít. A szignálok tökéletesen T212-re formázottak — 30 másodperc alatt végrehajtom."</p>
+        <p class="review-text">"Been in trading communities for years and this is the first one that actually delivers. Signals are formatted perfectly for T212 — takes 30 seconds to execute."</p>
         <div class="review-author">
           <div class="review-avatar">DK</div>
-          <div><div class="review-name">David K.</div><div class="review-ret">+341% 12 hónap alatt</div></div>
+          <div><div class="review-name">David K.</div><div class="review-ret">+341% in 12 months</div></div>
         </div>
       </div>
       <div class="review-card" data-delay="0">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Teljesen kezdőként csak €500-zal indultam, ideges voltam. 4 hónap után €1,820-nál tartok. A lépésről lépésre útmutatók miatt olyan könnyű végrehajtani."</p>
+        <p class="review-text">"As a complete beginner with only $500 to start, I was nervous. 4 months in and I'm at $1,820. The step-by-step format makes it so easy to execute."</p>
         <div class="review-author">
           <div class="review-avatar">EL</div>
-          <div><div class="review-name">Emma L.</div><div class="review-ret">+264% 4 hónap alatt</div></div>
+          <div><div class="review-name">Emma L.</div><div class="review-ret">+264% in 4 months</div></div>
         </div>
       </div>
       <div class="review-card" data-delay="100">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"A Pro csomag az első héten visszahozza az árát, ha rendesen követed a szignálokat. €49/hó olyan szignálokért, amik az elmúlt negyedévben €4,000-t hoztak nekem? Könnyű igen."</p>
+        <p class="review-text">"The Pro plan pays for itself within the first week if you follow the signals properly. $49/month for signals that generated me over $4,000 last quarter? Easy yes."</p>
         <div class="review-author">
           <div class="review-avatar">TH</div>
-          <div><div class="review-name">Thomas H.</div><div class="review-ret">+187% 3 hónap alatt</div></div>
+          <div><div class="review-name">Thomas H.</div><div class="review-ret">+187% in 3 months</div></div>
         </div>
       </div>
       <div class="review-card" data-delay="200">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Elite tag vagyok. Az 1-az-1 hívások aranyat érnek. Hogy valaki tényleg megnézi a portfóliómat és elmagyarázza a szignálok mögötti logikát — teljesen megváltoztatta a kereskedésemet."</p>
+        <p class="review-text">"Elite member here. The 1-on-1 calls are gold. Having someone actually look at my portfolio and explain the reasoning behind each signal has completely changed how I trade."</p>
         <div class="review-author">
           <div class="review-avatar">MV</div>
-          <div><div class="review-name">Marcus V.</div><div class="review-ret">+412% 14 hónap alatt</div></div>
+          <div><div class="review-name">Marcus V.</div><div class="review-ret">+412% in 14 months</div></div>
         </div>
       </div>
     </div>
@@ -1129,51 +1017,51 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
   <div class="faq-inner">
     <div class="faq-header">
       <div class="section-tag" style="margin:0 auto 14px"><div class="tag-dot"></div>FAQ</div>
-      <h2 class="section-h">Kérdéseid vannak?</h2>
-      <p class="section-p" style="margin:0 auto">Minden, amit tudnod kell mielőtt elkezded.</p>
+      <h2 class="section-h">Got questions?</h2>
+      <p class="section-p" style="margin:0 auto">Everything you need to know before getting started.</p>
     </div>
     <div class="faq-list">
       <div class="faq-item open">
         <div class="faq-q" onclick="toggleFaq(this)">
-          Kell kereskedési tapasztalat a szignálok követéséhez?
+          Do I need trading experience to follow the signals?
           <div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/></svg></div>
         </div>
-        <div class="faq-a"><div class="faq-a-inner">Egyáltalán nem. Minden szignálhoz megkapod a pontos tickert, belépési árat, stop-loss szintet és célárat. Szó szerint bemásolod a T212-be — nincs szükség elemzésre. A legtöbb tag 60 másodpercen belül végrehajt.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Not at all. Every signal comes with the exact ticker, entry price, stop-loss level, and target. You literally copy it into Trading 212 — no analysis required. Most members execute in under 60 seconds.</div></div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">
-          Hogyan számolják a 78%-os találati arányt?
+          How is the 78% win rate calculated?
           <div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/></svg></div>
         </div>
-        <div class="faq-a"><div class="faq-a-inner">Minden szignált publikálunk — nyereségest ÉS veszteségest — nyilvánosan a Telegram csatornán, időbélyeggel. A 78%-ot az összes 847 lezárt szignálból számítjuk az alapítás óta. Semmi nincs válogatva vagy törölve. Magad is átnézheted a teljes előzményt.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">We publish every signal — wins AND losses — publicly in the Telegram channel with timestamps. The 78% is calculated from all 847 closed signals since launch. Nothing is cherry-picked or deleted. You can scroll through the entire history yourself.</div></div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">
-          Miért pont a Trading 212?
+          Why specifically Trading 212?
           <div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/></svg></div>
         </div>
-        <div class="faq-a"><div class="faq-a-inner">A Trading 212 nulla jutalékot, €1-tól induló töredékrészvényeket és ISA-kompatibilis struktúrát kínál — ami azt jelenti, hogy az ISA-n belüli hozamok adómentesek. A díjmentes és töredékrészvény kombináció tökéletessé teszi day trading szignálok követéséhez bármilyen tőkeszinten.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Trading 212 offers zero commission, fractional shares from $1, and an ISA-compatible structure — meaning all returns inside the ISA are tax-free. The combination of no fees and fractional shares makes it perfect for following day trading signals at any capital level.</div></div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">
-          Mennyi tőkével lehet elkezdeni?
+          What's the minimum amount needed to start?
           <div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/></svg></div>
         </div>
-        <div class="faq-a"><div class="faq-a-inner">Akár €30-tól elindulhatsz a Trading 212-n a töredékrészvényeknek köszönhetően. Természetesen minél több tőkét fektetsz be, annál jelentősebbek az abszolút hozamok. Sok tag €500-€2,000-rel indul, hogy érezhető eredményeket lásson.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">You can start with as little as $30 on Trading 212 thanks to fractional shares. The more capital you deploy, the more significant your returns in absolute terms. Many members start with $500–$2,000 to see meaningful results.</div></div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">
-          Bármikor lemondhatom a Pro vagy Elite csomagot?
+          Can I cancel the Pro or Elite plan anytime?
           <div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/></svg></div>
         </div>
-        <div class="faq-a"><div class="faq-a-inner">Igen, nincsenek kötött szerződések. Írj a kevassets@gmail.com-ra bármikor és a csomagodat azonnal lemondják. A jelenlegi számlázási időszak végéig megtartod a hozzáférést.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes, no lock-in contracts. Email kevassets@gmail.com at any time and your plan will be cancelled immediately. You keep access until the end of your current billing period.</div></div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">
-          Hogyan kapom meg a szignálokat?
+          How are signals delivered?
           <div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/></svg></div>
         </div>
-        <div class="faq-a"><div class="faq-a-inner">Minden szignált Telegramon küldünk — az ingyenes verzió a t.me/tozsdekiraly csatornán heti 1-et kap, Pro/Elite tagok privát csoportot kapnak korlátlan azonnali riasztással, belépési és kilépési értesítőkkel.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">All signals are sent via Telegram — the free channel at t.me/tozsdekiraly gets 1 per week, while Pro/Elite members get a private group with unlimited instant alerts, including entry and exit notifications.</div></div>
       </div>
     </div>
   </div>
@@ -1184,19 +1072,19 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
   <div class="cta-bg"></div>
   <div class="cta-inner">
     <div class="section-tag" style="margin:0 auto 14px;display:inline-flex"><div class="tag-dot"></div>Get started today</div>
-    <h2 class="cta-h">Készen állsz a<br>day tradingre?</h2>
-    <p class="cta-sub">Csatlakozz az 1,200+ traderhez, akik már használják a VeloTrader szignálokat Trading 212-n. Kezdj ingyen, akár €30-tól.</p>
+    <h2 class="cta-h">Ready to start<br>day trading?</h2>
+    <p class="cta-sub">Join 1,200+ traders already using VeloTrader signals on Trading 212. Start free from as little as $30.</p>
     <div class="cta-btns">
       <a href="https://t.me/tozsdekiraly" target="_blank" class="btn-primary" style="font-size:15px;padding:16px 34px">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-        Csatlakozz ingyen Telegramra
+        Join Free on Telegram
       </a>
       <a href="mailto:kevassets@gmail.com" class="btn-secondary" style="font-size:15px;padding:16px 34px">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2 8 12 13 22 8"/></svg>
-        Írj nekünk
+        Email Us
       </a>
     </div>
-    <p class="cta-trust">📧 <a href="mailto:kevassets@gmail.com">kevassets@gmail.com</a> — írj bármikor kérdéssel</p>
+    <p class="cta-trust">📧 <a href="mailto:kevassets@gmail.com">kevassets@gmail.com</a> — reach out anytime with questions</p>
   </div>
 </section>
 
@@ -1208,7 +1096,7 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
         <a href="#" class="nav-logo" style="text-decoration:none">
           <span class="logo-text">Velo<span>Trader</span></span>
         </a>
-        <p class="footer-brand-p">Profi day trading szignálok verifikált előzményekkel. Átlátható, következetes, és valódi tradereknek készítve — €30-tól felfelé.</p>
+        <p class="footer-brand-p">Professional day trading signals with a verified track record. Transparent, consistent, and built for real traders — from $30 and up.</p>
         <div class="footer-socials">
           <a href="https://t.me/tozsdekiraly" target="_blank" class="social-link" title="Telegram">TG</a>
           <a href="https://instagram.com/kevassets.io" target="_blank" class="social-link" title="Instagram">IG</a>
@@ -1220,7 +1108,7 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
         <ul class="footer-links">
           <li><a href="#how">How It Works</a></li>
           <li><a href="#signals">Signals</a></li>
-          <li><a href="#calculator">Calculator</a></li>
+          
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -1238,15 +1126,15 @@ footer { background: var(--bg1); border-top: 1px solid var(--border); padding: 6
         <div class="footer-col-title">Plans</div>
         <ul class="footer-links">
           <li><a href="#pricing">Free Plan</a></li>
-          <li><a href="#pricing">Pro — €49/mo</a></li>
-          <li><a href="#pricing">Elite — €99/mo</a></li>
+          <li><a href="#pricing">Pro — $49/mo</a></li>
+          <li><a href="#pricing">Elite — $99/mo</a></li>
           <li><a href="https://www.trading212.com" target="_blank">Trading 212 ↗</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2026 VeloTrader. Minden jog fenntartva.</div>
-      <div class="footer-disc">A múltbeli teljesítmény nem jelzi a jövőbeli eredményeket. A kereskedés kockázattal jár. A VeloTrader nem szabályozott pénzügyi tanácsadó. Mindig végezd el a saját kutatásodat befektetés előtt.</div>
+      <div class="footer-copy">© 2026 VeloTrader. All rights reserved.</div>
+      <div class="footer-disc">Past performance is not indicative of future results. Trading involves risk. VeloTrader is not a regulated financial advisor. Always do your own research before investing.</div>
     </div>
   </div>
 </footer>
@@ -1347,17 +1235,17 @@ function updateCalc() {
   const fee = planFeeMonth * months;
   const net = gain - fee;
 
-  document.getElementById('calcResult').textContent = '€' + Math.round(gain).toLocaleString();
-  document.getElementById('calcResultSub').textContent = `on €${cap.toLocaleString()} over ${months} month${months>1?'s':''} with ${planName}`;
-  document.getElementById('cbCapital').textContent = '€' + cap.toLocaleString();
-  document.getElementById('cbGain').textContent = '+€' + Math.round(gain).toLocaleString();
-  document.getElementById('cbFee').textContent = '-€' + fee.toLocaleString();
-  document.getElementById('cbNet').textContent = (net >= 0 ? '+' : '') + '€' + Math.round(net).toLocaleString();
+  document.getElementById('calcResult').textContent = '$' + Math.round(gain).toLocaleString();
+  document.getElementById('calcResultSub').textContent = `on $${cap.toLocaleString()} over ${months} month${months>1?'s':''} with ${planName}`;
+  document.getElementById('cbCapital').textContent = '$' + cap.toLocaleString();
+  document.getElementById('cbGain').textContent = '+$' + Math.round(gain).toLocaleString();
+  document.getElementById('cbFee').textContent = '-$' + fee.toLocaleString();
+  document.getElementById('cbNet').textContent = (net >= 0 ? '+' : '') + '$' + Math.round(net).toLocaleString();
   document.getElementById('cbNet').style.color = net >= 0 ? 'var(--green)' : 'var(--red)';
 }
 
 capSlider.addEventListener('input', () => {
-  updateCalcSlider(capSlider, 'capitalDisplay', v => '€' + parseInt(v).toLocaleString());
+  updateCalcSlider(capSlider, 'capitalDisplay', v => '$' + parseInt(v).toLocaleString());
   updateCalc();
 });
 perSlider.addEventListener('input', () => {
@@ -1380,15 +1268,20 @@ function toggleBilling() {
     el.textContent = isAnnual ? el.dataset.annual : el.dataset.monthly;
   });
   document.querySelectorAll('.price-period').forEach((el, i) => {
-    if (i > 0) el.textContent = isAnnual ? 'havonta, billed annually' : 'havonta';
+    if (i > 0) el.textContent = isAnnual ? 'per month, billed annually' : 'per month';
   });
+  // Update Stripe links based on billing toggle
+  const proBtn = document.getElementById('proBtnLink');
+  const eliteBtn = document.getElementById('eliteBtnLink');
+  if (proBtn) proBtn.href = isAnnual ? 'https://buy.stripe.com/3cI8wQgdk3wK1aUa1bcIE01' : 'https://buy.stripe.com/14A5kE6CK9V8bPygpzcIE00';
+  if (eliteBtn) eliteBtn.href = isAnnual ? 'https://buy.stripe.com/5kQ00k1iq7N0cTC4GRcIE03' : 'https://buy.stripe.com/28EaEY6CK9V8aLu3CNcIE02';
 }
 
 // ── PERFORMANCE CHART (Canvas)
 const perfData = {
-  '6m': { points: [100,108,115,124,138,157,174], months: ['Dec','Jan','Feb','Mar','Apr','May','Jun'], ret: '+74%', end: '€17,400' },
-  '1y': { points: [100,105,110,117,127,140,155,172,192,218,251,291,312], months: ['Jun','Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May'], ret: '+312%', end: '€41,200' },
-  '2y': { points: [100,107,116,128,143,162,185,212,231,258,287,321,353,389,421,458,497,538,582,628,679,732,789,849], months: ['Jun','','','Dec','','','Jun','','','Dec','','','Jun','','','Dec','','','Jun','','','Dec',''], ret: '+749%', end: '€84,900' }
+  '6m': { points: [100,108,115,124,138,157,174], months: ['Dec','Jan','Feb','Mar','Apr','May','Jun'], ret: '+74%', end: '$17,400' },
+  '1y': { points: [100,105,110,117,127,140,155,172,192,218,251,291,312], months: ['Jun','Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May'], ret: '+312%', end: '$41,200' },
+  '2y': { points: [100,107,116,128,143,162,185,212,231,258,287,321,353,389,421,458,497,538,582,628,679,732,789,849], months: ['Jun','','','Dec','','','Jun','','','Dec','','','Jun','','','Dec','','','Jun','','','Dec',''], ret: '+749%', end: '$84,900' }
 };
 let currentRange = '1y';
 
